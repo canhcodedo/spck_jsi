@@ -1,0 +1,102 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background toàn trang */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form login */
+.login-form {
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Tiêu đề */
+.login-form h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-form p {
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Field */
+.field-form {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.field-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.field-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Focus input */
+.field-form input:focus {
+  border-color: #2196f3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2196f3;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1976d2;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.register-link a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #1565c0;
+}

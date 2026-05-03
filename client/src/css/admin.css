@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color:rgb(79, 137, 195);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.left-menu {
+  width: 20%;
+  box-shadow: 12px 0 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  height: 100vh;
+}
+
+.left-menu img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+.header img {
+    width: 32px;
+    height: 32px;
+}
+
+.right-main {
+  width: 80%;
+}
+
+.main {
+   padding: 20px;
+   background-color: rgb(228, 227, 227);
+   height: 100vh;
+   position: relative;
+}
+
+
+.header div {
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 10px;
+  top: 20%;
+
+}
+
+.header {
+  position: relative;
+  height: 60px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+ul li:hover {
+  color: blue;
+}
+
+
+p {
+  margin: 0;
+}
+
+table {
+  margin: 50px auto;
+  border: 1px solid black;
+  background-color: white;
+}
+
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+  width: 20%;
+}
+
+.product-image {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+.action-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.action-cell {
+  text-align: center;
+}
+
+.action-cell button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+tbody td {
+  border-bottom: 1px solid black;
+}
+
+
+tbody td {
+  padding: 10px;
+}
+
+tbody tr:hover {
+  background-color: rgb(235, 231, 231);
+}
+
+button.btn-new-product {
+  margin: 20px auto;
+  display: block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+}
+
+button.btn-new-product:hover {
+  background-color: blue;
+}
+
+/* Popup modal Delete - Create - Update product */
+
+.modal {
+  background-color: rgba(170, 168, 168, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-actions button:hover {
+  opacity: 0.8;
+}
+
+
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-confirm-delete {
+  background-color: red;
+  color: white;
+}
+
+.form-product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 500px;
+  padding: 20px 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 95vh;
+}
+
+.form-product input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(79, 137, 195);
+  width: 464px;
+}
+
+.form-product button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(79, 137, 195);
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.form-product button:hover {
+  opacity: 0.8;
+}
+
+.form-product label {
+  display: block;
+}
+
+.form-product h3 {
+  text-align: center;
+}
+
+button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.section-upload-file {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border: dashed 2px rgb(79, 137, 195);
+  border-radius: 5px;
+  height: 200px;
+}
+
+.section-upload-file img {
+  width: 50px;
+}
+
+#btn-upload-file {
+  color: #007bff !important;
+  background-color: white !important;
+  border: none !important;
+}
+
+#btn-upload-file:hover {
+  opacity: 0.8;
+}

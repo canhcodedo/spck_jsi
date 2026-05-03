@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./src/css/admin.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-menu">
+            <img src="./src/img/logo.png" alt="Logo">
+            <ul class="menu-items">
+                <li>Products</li>
+                <li>Users</li>
+                <li>Orders</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <div class="right-main">
+            <div class="header">
+                <div>
+                    <img src="./src/img/icon_admin.png" alt="Admin icon">
+                    Admin
+                </div>
+            </div>
+            <div class="main">
+                <h2>Products</h2>
+                <p>Manage and view system products</p>
+                <button class="btn-new-product">New Product</button>
+                <table>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-delete">
+        <div class="modal-window">
+            <h3>Are you sure you want to delete this product?<br> It cannot be restored.</h3>
+            <input type="hidden" id="delete-product-id">
+            <div class="modal-actions">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-confirm-delete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-create-update-product">
+        <form class="modal-window form-product">
+            <!-- Form title -->
+            <h3 id="title-form-product"></h3>
+            
+            <!-- Hidden input for product ID (used when editing) -->
+            <input type="hidden" id="edit-product-id">
+
+            <div class="form-field-name">
+                <label for="">Name</label>
+                <input type="text" id="product-name">
+            </div>
+
+            <div class="form-field-price">
+                <label for="">Price</label>
+                <input type="text" id="product-price">
+            </div>
+
+            <div class="form-field-description">
+                <label for="">Description</label>
+                <textarea id="product-description" cols="65" rows="5"></textarea>
+            </div>
+
+            <div class="form-field-image">
+                <label for="">Image</label>
+                <input type="file" id="product-image" accept="image/*" hidden>
+            </div>
+
+            <div class="section-upload-file">
+                <img id="placeholder-upload-image" src="./src/img/placeholder-upload-image.jpg" alt="Placeholder image">
+                <img id="preview-image" src="" alt="Preview image" style="display: none;">
+                <button type="button" id="btn-upload-file">Click to upload file</button>
+            </div>
+
+            <div class="modal-actions">
+                <button type="button" class="btn-cancel">Cancel</button>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="./src/js/admin.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./src/css/register.css">
+</head>
+<body>
+    <form action="" class="register-form">
+      <h2>Register</h2>
+      <div class="field-form">
+        <label for="">Name</label>
+        <input type="text" id="name">
+      </div>
+
+      <div class="field-form">
+        <label for="">Email</label>
+        <input type="text" id="email">
+      </div>
+
+      <div class="field-form">
+        <label for="">Password</label>
+        <input type="password" id="password">
+      </div>
+
+      <div class="field-form">
+        <label for="">Confirm Password</label>
+        <input type="password" id="confirm-password">
+      </div>
+      <button type="submit">Register</button>
+
+      <p class="login-link">
+        Already have an account? 
+        <a href="login.html">Login</a>
+      </p>
+    </form>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+    
+
+    <!-- Firebase Auth -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.13.1/firebase-auth-compat.min.js"
+        integrity="sha512-b2PGOE6ClpdFR5WZylPqJ9NEtHyGtdXKIe5wI0qRKVg3VeH9Km8CvihpnySwf6v21TV2cMTUp/BuglUiFLB38Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Functions -->
+    <script>
+        let userSession = JSON.parse(localStorage.getItem('user_session'));
+    </script>
+    <script src="./src/js/firebase-config.js"></script>
+    <script src="./src/js/register.js"></script>
+</body>
+</html>

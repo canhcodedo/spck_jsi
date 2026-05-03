@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./src/css/index.css">
+</head>
+<body>
+  <div id="header">
+    <h1>Home page</h1>
+    <div class="right-menu">
+      <a href="login.html" id="login-btn">Login</a>
+      <span id="user-name-logined"></span>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+
+    <!-- Firebase Auth -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.13.1/firebase-auth-compat.min.js"
+        integrity="sha512-b2PGOE6ClpdFR5WZylPqJ9NEtHyGtdXKIe5wI0qRKVg3VeH9Km8CvihpnySwf6v21TV2cMTUp/BuglUiFLB38Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./src/js/firebase-config.js"></script>
+    <script src="./src/js/mongodb-connect.js"></script>
+
+  <!-- Products list -->
+   <div class="products-wrapper">
+    <h2>Products</h2>
+    <div class="product-search">
+      <input type="text" id="product-search-input" placeholder="Search products by name...">
+    </div>
+    <div class="products-content"></div>
+   </div>
+   <script src="./src/js/index.js"></script>
+</body>
+</html>
